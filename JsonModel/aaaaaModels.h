@@ -6,11 +6,11 @@
 //  Copyright (c) 2016年 Juvid's. All rights reserved.
 //
 
-#import "LEBasicModels.h"
+#import "JuBasicModels.h"
 #import "aaaaaPagedataModels.h"
 #import "aaaaaDataModels.h"
 
-@interface aaaaaModels : LEBasicModels
+@interface aaaaaModels : JuBasicModels
 
 @property (nonatomic,strong) NSString *sh_status;
 @property (nonatomic,strong) aaaaaPagedataModels *sh_pageData;

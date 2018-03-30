@@ -6,9 +6,9 @@
 //  Copyright (c) 2016年 Juvid's. All rights reserved.
 //
 
-#import "LEBasicModels.h"
+#import "JuBasicModels.h"
 
-@interface aaaaaPagedataModels : LEBasicModels
+@interface aaaaaPagedataModels : JuBasicModels
 
 @property (nonatomic,strong) NSString *sh_pageSize;
 @property (nonatomic,strong) NSString *sh_pageCount;

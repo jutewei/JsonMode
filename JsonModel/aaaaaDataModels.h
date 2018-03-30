@@ -6,9 +6,9 @@
 //  Copyright (c) 2016年 Juvid's. All rights reserved.
 //
 
-#import "LEBasicModels.h"
+#import "JuBasicModels.h"
 
-@interface aaaaaDataModels : LEBasicModels
+@interface aaaaaDataModels : JuBasicModels
 
 @property (nonatomic,strong) NSString *sh_id;
 @property (nonatomic,strong) NSArray *sh_skilled;

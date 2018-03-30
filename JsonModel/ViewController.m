@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "LEBasicModels.h"
+#import "JuBasicModels.h"
 #import "JuvidModels.h"
 
 @implementation ViewController
@@ -81,7 +81,7 @@
     NSMutableString *strClass_m=[NSMutableString string];//m头信息
     
     [strClass_h appendFormat:@"%@",[self addInfo:class_name type:@"h"]];
-    [strClass_h appendFormat:@"#import \"LEBasicModels.h\"\n"];
+    [strClass_h appendFormat:@"#import \"JuBasicModels.h\"\n"];
     
     
     
@@ -125,7 +125,7 @@
     [strContent  appendFormat:@"\n@end"];
     
     
-    [strClass_h appendFormat:@"\n@interface %@ : LEBasicModels\n\n",class_name];
+    [strClass_h appendFormat:@"\n@interface %@ : JuBasicModels\n\n",class_name];
     [strClass_h appendFormat:@"%@",strProperty];
     
     

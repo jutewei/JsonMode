@@ -8,9 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import <objc/runtime.h>
-#import "LEBasicEncode.h"
+#import "JuBasicEncode.h"
+#import "NSArray+Safe.h"
 #define Pro_Prefix @"sh_"
-@interface LEBasicModels : LEBasicEncode
+@interface JuBasicModels : JuBasicEncode
 /**
  *  @author Juvid, 15-09-11 11:09:42
  *
@@ -18,7 +19,7 @@
  *
  *  @return 返回对象
  */
-+(id)initModel;
++(id)juInitModel;
 /**
  *  @author Juvid, 15-07-15 10:07:47
  *
@@ -26,7 +27,7 @@
  *
  *  @return 属性数组
  */
-+(NSArray *) getModelAllProperty;
++(NSArray *)getModelAllProperty;
 /**
  *  @author Juvid, 15-07-15 10:07:29
  *
@@ -37,6 +38,9 @@
  *  @return 返回转换好的对象
  */
 +(id) setDictionaryForModel :(NSDictionary *) dic ;
+-(id) setDictionaryForModel :(NSDictionary *) dic;
+//字典转换成对象
++(id) setDictionaryForModel :(NSDictionary *) dic withObject:(id)baseModel;
 /**
  *  @author Juvid, 15-07-15 10:07:34
  *
@@ -47,6 +51,16 @@
  *  @return 返回转换好的数组，数组里为对象
  */
 +(NSArray *) setArrayForModel :(NSArray *) arr ;
+/**
+ *  @author Juvid, 15-07-15 10:07:34
+ *
+ *  网络获取数据数组转换
+ *
+ *  @param arr 网络返回的数组包含相同的字典
+ *
+ *  @return 返回转换好的数组，数组里为数组
+ */
++(NSArray *) setArray :(NSArray *) arr ;
 /**
  *  @author Juvid, 15-07-15 10:07:42
  *
@@ -68,6 +82,17 @@
  *  @return 返回字典
  */
 +(NSMutableDictionary *) setModelForDictionary :(id) baseModel;
+//对象数组转换成数字
+/**
+ *  @author Juvid, 15-07-15 10:07:17
+ *
+ *   对象数组转换成字符数组
+ *
+ *  @param baseModel 转换的对象
+ *
+ *  @return 返回字典
+ */
++(NSArray *) setModelForArray :(NSArray *) arr;
 /**
  *  @author Juvid, 15-07-15 10:07:20
  *
@@ -78,5 +103,5 @@
  */
 -(void)setModelProValue:(NSString *)key value:(NSString *)value;
 
-
+-(NSString *)getVauleForkey:(NSString *)key;
 @end
