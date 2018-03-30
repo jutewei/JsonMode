@@ -100,12 +100,12 @@
                  if ([arrType isKindOfClass:[NSDictionary class]]) {
                      className=[self setProper:result[strDicKey][0] file_Name:[NSString stringWithFormat:@"%@%@",file_name,[strDicKey capitalizedString]]];
                      [strClass_h appendFormat:@"#import \"%@.h\"\n",className];
-                     [strContent appendFormat:@"\n-(void)set%@:(NSArray *)%@{\n  if ([%@ isKindOfClass:[NSArray class]]) {\n      _%@=[%@ setArrayForModel:%@];\n  }else{\n      _%@=[NSArray new]; \n   }\n}\n",setName,propertyName,propertyName,propertyName,className,propertyName,propertyName];
+                     [strContent appendFormat:@"\n-(void)set%@:(NSArray *)%@{\n       _%@=[%@ setArrayForModel:%@];\n \n}\n",setName,propertyName,propertyName,className,propertyName];
                  }
                  
              }
              else{
-                 [strContent appendFormat:@"\n-(void)set%@:(NSArray *)%@{\n  if ([%@ isKindOfClass:[NSArray class]]) {\n      _%@=%@;\n}else{\n      _%@=[NSArray new]; \n   }\n}\n",setName,propertyName,propertyName,propertyName,propertyName,propertyName];
+                 [strContent appendFormat:@"\n-(void)set%@:(NSArray *)%@{\n        _%@=[NSArray setArray:%@];\n}\n",setName,propertyName,propertyName,propertyName];
              }
              
          }
@@ -114,7 +114,7 @@
             className=[self setProper:result[strDicKey] file_Name:[NSString stringWithFormat:@"%@%@",file_name,[strDicKey capitalizedString]]];
             [strProperty appendFormat:@"@property (nonatomic,strong) %@ *%@;\n",className,propertyName];
             [strClass_h appendFormat:@"#import \"%@.h\"\n",className];
-            [strContent appendFormat:@"\n-(void)set%@:(NSDictionary *)%@{\n   if ([%@ isKindOfClass:[NSDictionary class]]) {\n     _%@=[%@ setDictionaryForModel:%@];  \n   }\n}\n",setName,propertyName,propertyName,propertyName,className,propertyName];
+            [strContent appendFormat:@"\n-(void)set%@:(NSDictionary *)%@{\n      _%@=[%@ setDictionaryForModel:%@]; \n}\n",setName,propertyName,propertyName,className,propertyName];
             
         }
         else{
