@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
-#import "JuBasicModels.h"
+#import "NSObject+JsonModel.h"
 #import "JuvidModels.h"
+#import "JuModel.h"
 
 @implementation ViewController
 
@@ -17,13 +18,26 @@
     _ju_textJson.font=[NSFont systemFontOfSize:16];
 
 //    测试model
-   /* NSData *dataResult=[_ju_textJson.string dataUsingEncoding:NSUTF8StringEncoding];
+    NSData *dataResult=[_ju_textJson.string dataUsingEncoding:NSUTF8StringEncoding];
     NSDictionary *dicResult=[NSJSONSerialization JSONObjectWithData:dataResult options:NSJSONReadingMutableContainers error:nil];
-    juvidM=[JuvidModels setDictionaryForModel:dicResult];*/
-    
+    juvidM=[JuModel juSetDictionaryForModel:dicResult];
+    NSDictionary *dic=[NSMutableDictionary dictionaryWithContentsOfFile:[self juDocumentPath]];
+    if (dic) {
+//        _ju_ClassName.stringValue=dic[@"class"];
+//        _ju_PreName.stringValue=dic[@"prefix"];
+    }
 //  {"result":{"desc":"查询成功","mark":"0"},"sys":{"update_time":"[\"2015-08-07 15:48:02\"]","version_addr":"XYLEPlay_08-resigned.ipa","app_type":"ios","create_name":"1","version_number":"1.0","update_name":"[\"13818287875\"]","create_time":"1","pk_id":1,"is_replace":"1"}}
     
     // Do any additional setup after loading the view.
+}
+-(NSString *)juDocumentPath{
+    NSString *path =[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    return [NSString stringWithFormat:@"%@/config.plist",path];
+}
+-(void)juSaveConfig{
+    NSMutableDictionary *dicCon=[NSMutableDictionary dictionary];
+    [dicCon setValue:_ju_PreName.stringValue forKey:@"prefix"];
+    [dicCon writeToFile:[self juDocumentPath] atomically:YES];
 }
 -(void)shCreateDirectory{
     NSArray *paths =NSSearchPathForDirectoriesInDomains(NSDesktopDirectory,NSUserDomainMask, YES);
@@ -43,9 +57,11 @@
 }
 
 - (IBAction)ju_ProductionModel:(NSButton *)sender {
+//    [self juSaveConfig];
     [self shCreateDirectory];
+    NSError *error=nil;
     NSData *dataResult=[_ju_textJson.string dataUsingEncoding:NSUTF8StringEncoding];
-    NSDictionary *dicResult=[NSJSONSerialization JSONObjectWithData:dataResult options:NSJSONReadingMutableContainers error:nil];
+    NSDictionary *dicResult=[NSJSONSerialization JSONObjectWithData:dataResult options:NSJSONReadingMutableContainers error:&error];
     if (dicResult) {
          [self setProper:dicResult file_Name:nil];
     }
@@ -81,15 +97,15 @@
     NSMutableString *strClass_m=[NSMutableString string];//m头信息
     
     [strClass_h appendFormat:@"%@",[self addInfo:class_name type:@"h"]];
-    [strClass_h appendFormat:@"#import \"JuBasicModels.h\"\n"];
-    
+    [strClass_h appendFormat:@"#import \"NSObject+JsonModel.h\"\n"];
     
     
     NSString *className;//类名
-    
+    NSString *preString=[NSString stringWithFormat:@"%@_",_ju_PreName.stringValue.lowercaseString];
+
     for (NSString *strDicKey in [result allKeys]) {
-        NSString *propertyName=[NSString stringWithFormat:@"%@%@",Pro_Prefix,strDicKey];//属性名
-        NSString *setName=[NSString stringWithFormat:@"%@%@",[Pro_Prefix capitalizedString],strDicKey];
+        NSString *propertyName=[NSString stringWithFormat:@"%@%@",preString,strDicKey];//属性名
+        NSString *setName=[NSString stringWithFormat:@"%@%@",[preString capitalizedString],strDicKey];
          if([result[strDicKey] isKindOfClass:[NSArray class]]){
             [strProperty appendFormat:@"@property (nonatomic,strong) NSArray *%@;\n",propertyName];
             
@@ -100,12 +116,12 @@
                  if ([arrType isKindOfClass:[NSDictionary class]]) {
                      className=[self setProper:result[strDicKey][0] file_Name:[NSString stringWithFormat:@"%@%@",file_name,[strDicKey capitalizedString]]];
                      [strClass_h appendFormat:@"#import \"%@.h\"\n",className];
-                     [strContent appendFormat:@"\n-(void)set%@:(NSArray *)%@{\n       _%@=[%@ setArrayForModel:%@];\n \n}\n",setName,propertyName,propertyName,className,propertyName];
+                     [strContent appendFormat:@"\n-(void)set%@:(NSArray *)%@{\n    _%@=[%@ juSetArrayForModel:%@];\n \n}\n",setName,propertyName,propertyName,className,propertyName];
                  }
                  
              }
              else{
-                 [strContent appendFormat:@"\n-(void)set%@:(NSArray *)%@{\n        _%@=[NSArray setArray:%@];\n}\n",setName,propertyName,propertyName,propertyName];
+                 [strContent appendFormat:@"\n-(void)set%@:(NSArray *)%@{\n    _%@=[NSArray setArray:%@];\n}\n",setName,propertyName,propertyName,propertyName];
              }
              
          }
@@ -114,7 +130,7 @@
             className=[self setProper:result[strDicKey] file_Name:[NSString stringWithFormat:@"%@%@",file_name,[strDicKey capitalizedString]]];
             [strProperty appendFormat:@"@property (nonatomic,strong) %@ *%@;\n",className,propertyName];
             [strClass_h appendFormat:@"#import \"%@.h\"\n",className];
-            [strContent appendFormat:@"\n-(void)set%@:(NSDictionary *)%@{\n      _%@=[%@ setDictionaryForModel:%@]; \n}\n",setName,propertyName,propertyName,className,propertyName];
+            [strContent appendFormat:@"\n-(void)set%@:(NSDictionary *)%@{\n    _%@=[%@ juSetDictionaryForModel:%@]; \n}\n",setName,propertyName,propertyName,className,propertyName];
             
         }
         else{
@@ -125,7 +141,7 @@
     [strContent  appendFormat:@"\n@end"];
     
     
-    [strClass_h appendFormat:@"\n@interface %@ : JuBasicModels\n\n",class_name];
+    [strClass_h appendFormat:@"\n@interface %@ : NSObject\n\n",class_name];
     [strClass_h appendFormat:@"%@",strProperty];
     
     

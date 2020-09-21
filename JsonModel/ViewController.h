@@ -15,6 +15,7 @@
 }
 @property (weak) IBOutlet NSButton *ju_Model;
 @property (weak) IBOutlet NSTextField *ju_ClassName;
+@property (weak) IBOutlet NSTextField *ju_PreName;
 @property (weak) IBOutlet NSTextField *ju_Warm;
 
 @property (unsafe_unretained) IBOutlet NSTextView *ju_textJson;
