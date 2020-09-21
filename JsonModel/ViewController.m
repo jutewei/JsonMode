@@ -76,9 +76,11 @@
 }
 
 -(NSString *)setProper:(NSDictionary *)result file_Name:(NSString *)fileName{
+
+    NSString *classPre=_ju_PreName.stringValue.length?_ju_PreName.stringValue:@"Ju";
     NSString *file_name;
     if (!fileName) {
-        file_name=[NSString stringWithFormat:@"%@",_ju_ClassName.stringValue];
+        file_name=[NSString stringWithFormat:@"%@%@",classPre,_ju_ClassName.stringValue];
     }
     else{
         file_name=fileName;
@@ -101,11 +103,12 @@
     
     
     NSString *className;//类名
-    NSString *preString=[NSString stringWithFormat:@"%@_",_ju_PreName.stringValue.lowercaseString];
+
+    NSString *propertyPre=[NSString stringWithFormat:@"%@_",classPre.lowercaseString];
 
     for (NSString *strDicKey in [result allKeys]) {
-        NSString *propertyName=[NSString stringWithFormat:@"%@%@",preString,strDicKey];//属性名
-        NSString *setName=[NSString stringWithFormat:@"%@%@",[preString capitalizedString],strDicKey];
+        NSString *propertyName=[NSString stringWithFormat:@"%@%@",propertyPre,strDicKey];//属性名
+        NSString *setName=[NSString stringWithFormat:@"%@%@",[propertyPre capitalizedString],strDicKey];
          if([result[strDicKey] isKindOfClass:[NSArray class]]){
             [strProperty appendFormat:@"@property (nonatomic,strong) NSArray *%@;\n",propertyName];
             
