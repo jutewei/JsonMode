@@ -10,7 +10,7 @@
 #import "NSObject+JsonModel.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface JuEncodeObject : NSObject
+@interface JuEncodeObject : NSObject<NSCopying,NSCoding>
 -(void)juDestroyDealloc;//重置单例
 /**复制对象内容不重新初始化*/
 -(void)juMutableCopy:(id)baseClass;

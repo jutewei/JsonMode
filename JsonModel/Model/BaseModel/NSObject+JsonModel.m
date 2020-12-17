@@ -18,7 +18,7 @@
     return baseModel;
 }
 //获取所以属性
-+(NSArray *) juGetModelAllProperty{
++(NSArray *)juGetModelAllProperty{
     NSMutableArray *arrProperty=[NSMutableArray array];
     id  baseModel = [[[self class] alloc]init] ;
     unsigned int outCount, i;
@@ -34,14 +34,14 @@
     return arrProperty;
 }
 //字典转换成对象
-+(id) juSetDictionaryForModel :(NSDictionary *) dic {
++(id)juSetDictionaryForModel:(NSDictionary *)dic {
     return [self juSetDictionaryForModel:dic withObject:nil];
 }
--(id) juSetDictionaryForModel :(NSDictionary *) dic{
+-(id)juSetDictionaryForModel:(NSDictionary *)dic{
     return [NSObject juSetDictionaryForModel:dic withObject:self];
 }
 //字典转换成对象
-+(id) juSetDictionaryForModel :(NSDictionary *) dic withObject:(id)baseModel{
++(id)juSetDictionaryForModel:(NSDictionary *)dic withObject:(id)baseModel{
     BOOL isNewObject = false;
     if (!baseModel) {
         isNewObject=YES;
@@ -91,7 +91,7 @@
     return baseModel ;
 }
 //数组转换成数组对象
-+(NSArray *) juSetArrayForModel :(NSArray *) arr {
++(NSArray *)juSetArrayForModel:(NSArray *) arr {
     NSMutableArray *backArr = [[NSMutableArray alloc ]init];
     if(![arr isKindOfClass:[NSArray class]])return backArr;
     for (NSDictionary *dic in arr)
@@ -109,7 +109,7 @@
 }
 
 //对象转换成字典
-+(NSMutableDictionary *) juSetModelForDictionary :(id) baseModel {
++(NSMutableDictionary *)juSetModelForDictionary:(id) baseModel {
     if (![baseModel isKindOfClass:[NSObject class]]) {
         return [NSMutableDictionary dictionary];//防止死循环
     }
@@ -145,7 +145,7 @@
 
 
 //把模型转换回数组
-+(NSArray *) juSetModelForArray :(NSArray *) arr{
++(NSArray *)juSetModelForArray:(NSArray *) arr{
     if(![arr isKindOfClass:[NSArray class]])return nil;
     NSMutableArray *backArr = [[NSMutableArray alloc ]init];
     for (id  baseModel in arr)
@@ -158,7 +158,7 @@
 
 
 //对象转化成字符串
-+(NSString *) juSetModelForString :(id ) baseModel{
++(NSString *)juSetModelForString:(id )baseModel{
     NSMutableString *strModel = [NSMutableString string];
     Class class = [baseModel class];
     while (class!=[NSObject class]) {

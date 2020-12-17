@@ -12,6 +12,7 @@
 //NS_ASSUME_NONNULL_BEGIN
 
 @interface NSObject (JsonModel)
+
 -(void)juSetModelExtension;
 /**
  *  @author Juvid, 15-09-11 11:09:42
@@ -38,10 +39,11 @@
  *
  *  @return 返回转换好的对象
  */
-+(id) juSetDictionaryForModel :(NSDictionary *) dic ;
--(id) juSetDictionaryForModel :(NSDictionary *) dic;
++(id) juSetDictionaryForModel:(NSDictionary *) dic;
+
+-(id) juSetDictionaryForModel:(NSDictionary *) dic;
 //字典转换成对象
-+(id) juSetDictionaryForModel :(NSDictionary *) dic withObject:(id)baseModel;
++(id) juSetDictionaryForModel:(NSDictionary *)dic withObject:(id)baseModel;
 /**
  *  @author Juvid, 15-07-15 10:07:34
  *
@@ -51,7 +53,7 @@
  *
  *  @return 返回转换好的数组，数组里为对象
  */
-+(NSArray *) juSetArrayForModel :(NSArray *) arr ;
++(NSArray *)juSetArrayForModel:(NSArray *) arr ;
 
 /**
  *  @author Juvid, 15-07-15 10:07:42
@@ -62,7 +64,7 @@
  *
  *  @return 返回对象字符串
  */
-+(NSString *) juSetModelForString :(id ) baseModel;
++(NSString *)juSetModelForString:(id )baseModel;
 //对象转换成字典
 /**
  *  @author Juvid, 15-07-15 10:07:17
@@ -73,7 +75,7 @@
  *
  *  @return 返回字典
  */
-+(NSMutableDictionary *) juSetModelForDictionary :(id) baseModel;
++(NSMutableDictionary *)juSetModelForDictionary:(id)baseModel;
 //对象数组转换成数字
 /**
  *  @author Juvid, 15-07-15 10:07:17
@@ -84,7 +86,7 @@
  *
  *  @return 返回字典
  */
-+(NSArray *) juSetModelForArray :(NSArray *) arr;
++(NSArray *)juSetModelForArray:(NSArray *) arr;
 /**
  *  @author Juvid, 15-07-15 10:07:20
  *
