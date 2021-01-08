@@ -57,7 +57,7 @@
 }
 
 - (IBAction)ju_ProductionModel:(NSButton *)sender {
-//    [self juSaveConfig];
+    [self juSaveConfig];
     [self shCreateDirectory];
     NSError *error=nil;
     NSData *dataResult=[_ju_textJson.string dataUsingEncoding:NSUTF8StringEncoding];
@@ -70,8 +70,6 @@
         _ju_Warm.textColor=[NSColor redColor];
 
     }
-
-   
 //    NSLog(@"%@",_ju_textJson.string);
 }
 
@@ -171,7 +169,7 @@
 }
 -(NSString *)addInfo:(NSString *)className type:(NSString *)type{
     NSDateFormatter *forMatter=[[NSDateFormatter alloc]init];
-    [forMatter setDateFormat:@"d/M/YY"];
+    [forMatter setDateFormat:@"YYYY/M/d"];
     NSString *strYMD=[forMatter stringFromDate:[NSDate date]];
     [forMatter setDateFormat:@"YYYY"];
     NSString *strY=[forMatter stringFromDate:[NSDate date]];
