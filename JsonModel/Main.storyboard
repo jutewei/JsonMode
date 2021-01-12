@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17506"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -724,7 +724,7 @@
                                 </connections>
                             </button>
                             <textField horizontalHuggingPriority="255" verticalHuggingPriority="750" horizontalCompressionResistancePriority="755" translatesAutoresizingMaskIntoConstraints="NO" id="6UU-Y7-y52">
-                                <rect key="frame" x="65" y="8" width="180" height="21"/>
+                                <rect key="frame" x="63" y="8" width="182" height="21"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="kYb-n5-BOC">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -732,7 +732,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Jha-lQ-7Xq">
-                                <rect key="frame" x="8" y="12" width="49" height="13"/>
+                                <rect key="frame" x="8" y="12" width="47" height="13"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="主类名:" id="WcN-dx-iAz">
                                     <font key="font" size="13" name="STHeitiSC-Light"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -758,13 +758,9 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <textField horizontalHuggingPriority="255" verticalHuggingPriority="750" horizontalCompressionResistancePriority="755" translatesAutoresizingMaskIntoConstraints="NO" id="6nA-51-nvr">
-                                <rect key="frame" x="65" y="45" width="180" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="VMQ-Zr-5CS"/>
-                                </constraints>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="JU" drawsBackground="YES" id="ITq-v8-xML">
-                                    <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" formatWidth="-1" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="F4z-ar-ayq"/>
+                            <textField horizontalHuggingPriority="255" verticalHuggingPriority="750" horizontalCompressionResistancePriority="755" translatesAutoresizingMaskIntoConstraints="NO" id="1z8-oq-47n">
+                                <rect key="frame" x="63" y="45" width="182" height="21"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="MT" drawsBackground="YES" id="8W5-3w-NJT">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -777,28 +773,27 @@
                             <constraint firstItem="X8X-kO-hHs" firstAttribute="leading" secondItem="6UU-Y7-y52" secondAttribute="trailing" constant="15" id="B7v-JR-xRp"/>
                             <constraint firstItem="X8X-kO-hHs" firstAttribute="top" relation="greaterThanOrEqual" secondItem="qFY-gs-POW" secondAttribute="bottom" constant="6" id="BEw-1h-qwu"/>
                             <constraint firstItem="K01-F9-2qF" firstAttribute="centerY" secondItem="X8X-kO-hHs" secondAttribute="centerY" id="Bcn-6c-7he"/>
+                            <constraint firstItem="1z8-oq-47n" firstAttribute="centerY" secondItem="HM9-62-2rn" secondAttribute="centerY" id="Cdz-ym-Ixj"/>
                             <constraint firstItem="HM9-62-2rn" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="10" id="DTi-TT-CYz"/>
                             <constraint firstAttribute="bottom" secondItem="Jha-lQ-7Xq" secondAttribute="bottom" constant="12" id="DTp-Ln-n7i"/>
                             <constraint firstAttribute="trailing" secondItem="qFY-gs-POW" secondAttribute="trailing" id="Hfi-Mz-UZJ"/>
                             <constraint firstItem="6UU-Y7-y52" firstAttribute="centerY" secondItem="Jha-lQ-7Xq" secondAttribute="centerY" id="JPQ-OH-wwT"/>
-                            <constraint firstItem="6UU-Y7-y52" firstAttribute="width" secondItem="6nA-51-nvr" secondAttribute="width" id="Rdy-gb-Qxu"/>
                             <constraint firstItem="6UU-Y7-y52" firstAttribute="leading" secondItem="Jha-lQ-7Xq" secondAttribute="trailing" constant="10" id="Ts4-Lu-hIv"/>
                             <constraint firstAttribute="bottom" secondItem="K01-F9-2qF" secondAttribute="bottom" constant="30" id="a1d-Bn-suH"/>
-                            <constraint firstItem="6nA-51-nvr" firstAttribute="centerY" secondItem="HM9-62-2rn" secondAttribute="centerY" id="aRV-41-2ly"/>
                             <constraint firstAttribute="bottom" secondItem="qFY-gs-POW" secondAttribute="bottom" constant="75" id="c6G-Rb-eyD"/>
                             <constraint firstItem="HM9-62-2rn" firstAttribute="top" secondItem="qFY-gs-POW" secondAttribute="bottom" constant="12" id="e7I-iW-xyY"/>
                             <constraint firstAttribute="trailing" secondItem="K01-F9-2qF" secondAttribute="trailing" constant="15" id="gxy-vy-ISi"/>
-                            <constraint firstItem="6UU-Y7-y52" firstAttribute="leading" secondItem="6nA-51-nvr" secondAttribute="leading" id="iLq-Tb-wEM"/>
+                            <constraint firstItem="6UU-Y7-y52" firstAttribute="trailing" secondItem="1z8-oq-47n" secondAttribute="trailing" id="hxK-Mi-LHa"/>
                             <constraint firstItem="qFY-gs-POW" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="mM4-Yi-yMV"/>
                             <constraint firstItem="Jha-lQ-7Xq" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="10" id="nIh-7d-eCm"/>
-                            <constraint firstItem="6nA-51-nvr" firstAttribute="leading" secondItem="HM9-62-2rn" secondAttribute="trailing" constant="10" id="wHX-fh-ay7"/>
+                            <constraint firstItem="6UU-Y7-y52" firstAttribute="leading" secondItem="1z8-oq-47n" secondAttribute="leading" id="rPf-Y6-cOh"/>
                             <constraint firstItem="K01-F9-2qF" firstAttribute="leading" secondItem="6UU-Y7-y52" secondAttribute="trailing" constant="200" id="xJP-jy-OQA"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="ju_ClassName" destination="6UU-Y7-y52" id="j8E-ro-0S7"/>
                         <outlet property="ju_Model" destination="K01-F9-2qF" id="ZS8-ZV-6qJ"/>
-                        <outlet property="ju_PreName" destination="6nA-51-nvr" id="keM-r4-ZS7"/>
+                        <outlet property="ju_PreName" destination="1z8-oq-47n" id="Lkp-fi-Suz"/>
                         <outlet property="ju_Warm" destination="X8X-kO-hHs" id="aFq-lS-D54"/>
                         <outlet property="ju_textJson" destination="kmV-Eh-jB9" id="QdH-mz-W00"/>
                     </connections>

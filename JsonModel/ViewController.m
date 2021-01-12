@@ -20,7 +20,7 @@
 //    测试model
     NSData *dataResult=[_ju_textJson.string dataUsingEncoding:NSUTF8StringEncoding];
     NSDictionary *dicResult=[NSJSONSerialization JSONObjectWithData:dataResult options:NSJSONReadingMutableContainers error:nil];
-    juvidM=[JuModel juSetDictionaryForModel:dicResult];
+    juvidM=[JuModel juToModel:dicResult];
     NSDictionary *dic=[NSMutableDictionary dictionaryWithContentsOfFile:[self juDocumentPath]];
     if (dic) {
 //        _ju_ClassName.stringValue=dic[@"class"];
@@ -117,21 +117,18 @@
                  if ([arrType isKindOfClass:[NSDictionary class]]) {
                      className=[self setProper:result[strDicKey][0] file_Name:[NSString stringWithFormat:@"%@%@",file_name,[strDicKey capitalizedString]]];
                      [strClass_h appendFormat:@"#import \"%@.h\"\n",className];
-                     [strContent appendFormat:@"\n-(void)set%@:(NSArray *)%@{\n    _%@=[%@ juSetArrayForModel:%@];\n \n}\n",setName,propertyName,propertyName,className,propertyName];
+                     [strContent appendFormat:@"\n-(void)set%@:(NSArray *)%@{\n    _%@=[%@ juToModelArr:%@];\n \n}\n",setName,propertyName,propertyName,className,propertyName];
                  }
                  
              }
-             else{
-                 [strContent appendFormat:@"\n-(void)set%@:(NSArray *)%@{\n    _%@=[NSArray setArray:%@];\n}\n",setName,propertyName,propertyName,propertyName];
-             }
-             
+    
          }
         else if([result[strDicKey] isKindOfClass:[NSDictionary class]]){
             
             className=[self setProper:result[strDicKey] file_Name:[NSString stringWithFormat:@"%@%@",file_name,[strDicKey capitalizedString]]];
             [strProperty appendFormat:@"@property (nonatomic,strong) %@ *%@;\n",className,propertyName];
             [strClass_h appendFormat:@"#import \"%@.h\"\n",className];
-            [strContent appendFormat:@"\n-(void)set%@:(NSDictionary *)%@{\n    _%@=[%@ juSetDictionaryForModel:%@]; \n}\n",setName,propertyName,propertyName,className,propertyName];
+            [strContent appendFormat:@"\n-(void)set%@:(NSDictionary *)%@{\n    _%@=[%@ juToModel:%@]; \n}\n",setName,propertyName,propertyName,className,propertyName];
             
         }
         else{

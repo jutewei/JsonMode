@@ -7,53 +7,46 @@
 //
 /**未使用**/
 #import <Foundation/Foundation.h>
-#import "NSArray+Safe.h"
-#define JU_Model_Prefix @"ju_"
+//#import "NSArray+Safe.h"
+#define JU_ProPrefixs @[@"ju_",@"mt_"]
 //NS_ASSUME_NONNULL_BEGIN
+
+@protocol JuIgnore
+@end
 
 @interface NSObject (JsonModel)
 
--(void)juSetModelExtension;
+//忽略的属性集合
+//-(NSArray *)juIgnorekeys;
+
 /**
- *  @author Juvid, 15-09-11 11:09:42
- *
  *  初始化model对象
- *
- *  @return 返回对象
  */
-+(id)mtInitM;
-/**
- *  @author Juvid, 15-07-15 10:07:47
- *
- *  得到所有属性
- *
- *  @return 属性数组
- */
-+(NSArray *)juGetModelAllProperty;
++(id)juInitM;
+
 /**
  *  @author Juvid, 15-07-15 10:07:29
  *
- *  网络获取数据转对象
+ *  json数据转对象
  *
  *  @param dic 网络返回的字典
  *
  *  @return 返回转换好的对象
  */
-+(id) juSetDictionaryForModel:(NSDictionary *) dic;
++(id)juToModel:(NSDictionary *)dic;
 
--(id) juSetDictionaryForModel:(NSDictionary *) dic;
-//字典转换成对象
-+(id) juSetDictionaryForModel:(NSDictionary *)dic withObject:(id)baseModel;
+-(id)juToModel:(NSDictionary *)dic;
+
 /**
  *  @author Juvid, 15-07-15 10:07:34
  *
- *  网络获取数据转对象数组
+ *  json数据转对象数组
  *
  *  @param arr 网络返回的数组包含相同的字典
  *
  *  @return 返回转换好的数组，数组里为对象
  */
-+(NSArray *)juSetArrayForModel:(NSArray *) arr ;
++(NSArray *)juToModelArr:(NSArray *)arr;
 
 /**
  *  @author Juvid, 15-07-15 10:07:42
@@ -64,29 +57,32 @@
  *
  *  @return 返回对象字符串
  */
-+(NSString *)juSetModelForString:(id )baseModel;
+
++(NSString *)juToString:(NSObject *)baseModel;
+-(NSString *)juToString;
 //对象转换成字典
 /**
  *  @author Juvid, 15-07-15 10:07:17
  *
- *   对象转换成字典包括父对象
+ *   对象转换成字典
  *
- *  @param baseModel 转换的对象
+ *  @param model 转换的对象
  *
  *  @return 返回字典
  */
-+(NSMutableDictionary *)juSetModelForDictionary:(id)baseModel;
++(NSMutableDictionary *)juToDictionary:(NSObject *)model;
+-(NSMutableDictionary *)juToDictionary;
 //对象数组转换成数字
 /**
  *  @author Juvid, 15-07-15 10:07:17
  *
- *   对象数组转换成字符数组
+ *   对象数组转换成字典数组
  *
  *  @param arr 转换的对象数组
  *
  *  @return 返回字典
  */
-+(NSArray *)juSetModelForArray:(NSArray *) arr;
++(NSArray *)juToDicArray:(NSArray *)arr;
 /**
  *  @author Juvid, 15-07-15 10:07:20
  *
@@ -95,9 +91,16 @@
  *  @param key   键
  *  @param value 值
  */
--(void)juSetModelProValue:(NSString *)key value:(NSString *)value;
-
-//-(NSString *)mtGetVauleForkey:(NSString *)key;
+-(void)juModelKey:(NSString *)key value:(NSString *)value;
+/**
+ *  @author Juvid, 15-07-15 10:07:47
+ *
+ *  得到所有属性
+ *
+ *  @return 属性数组
+ */
++(NSArray *)juAllProperty;
+//-(NSString *)juVauleForkey:(NSString *)key;
 @end
 
 //NS_ASSUME_NONNULL_END

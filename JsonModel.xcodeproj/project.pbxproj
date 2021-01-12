@@ -16,11 +16,11 @@
 		C400207A1BA2B68F00BBA475 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C40020761BA2B68F00BBA475 /* AppDelegate.m */; };
 		C400207B1BA2B68F00BBA475 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C40020781BA2B68F00BBA475 /* ViewController.m */; };
 		C400207C1BA2B68F00BBA475 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C40020791BA2B68F00BBA475 /* Main.storyboard */; };
+		EB6E9DF925ADB4B500004D82 /* NSObject+JsonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6E9DF525ADB4B500004D82 /* NSObject+JsonModel.m */; };
+		EB6E9DFA25ADB4B500004D82 /* JuEncodeCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6E9DF725ADB4B500004D82 /* JuEncodeCoder.m */; };
 		EBC10026206E30BB005DC92B /* NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC10021206E30BB005DC92B /* NSArray+Safe.m */; };
 		EBC10027206E30BB005DC92B /* JuBasicEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC10022206E30BB005DC92B /* JuBasicEncode.m */; };
 		EBC10028206E30BB005DC92B /* JuBasicModels.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC10023206E30BB005DC92B /* JuBasicModels.m */; };
-		EBD7E738251896E100522B58 /* JuEncodeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD7E735251896E000522B58 /* JuEncodeObject.m */; };
-		EBD7E739251896E100522B58 /* NSObject+JsonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD7E736251896E000522B58 /* NSObject+JsonModel.m */; };
 		EBD7E74125189A2200522B58 /* JuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD7E73B25189A2100522B58 /* JuModel.m */; };
 		EBD7E74225189A2200522B58 /* JuResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD7E73D25189A2100522B58 /* JuResultModel.m */; };
 		EBD7E74325189A2200522B58 /* JuSysModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD7E73F25189A2200522B58 /* JuSysModel.m */; };
@@ -55,16 +55,16 @@
 		C40020771BA2B68F00BBA475 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C40020781BA2B68F00BBA475 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C40020791BA2B68F00BBA475 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		EB6E9DF525ADB4B500004D82 /* NSObject+JsonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JsonModel.m"; sourceTree = "<group>"; };
+		EB6E9DF625ADB4B500004D82 /* NSObject+JsonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JsonModel.h"; sourceTree = "<group>"; };
+		EB6E9DF725ADB4B500004D82 /* JuEncodeCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuEncodeCoder.m; sourceTree = "<group>"; };
+		EB6E9DF825ADB4B500004D82 /* JuEncodeCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuEncodeCoder.h; sourceTree = "<group>"; };
 		EBC10020206E30BB005DC92B /* JuBasicEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuBasicEncode.h; sourceTree = "<group>"; };
 		EBC10021206E30BB005DC92B /* NSArray+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Safe.m"; sourceTree = "<group>"; };
 		EBC10022206E30BB005DC92B /* JuBasicEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuBasicEncode.m; sourceTree = "<group>"; };
 		EBC10023206E30BB005DC92B /* JuBasicModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuBasicModels.m; sourceTree = "<group>"; };
 		EBC10024206E30BB005DC92B /* JuBasicModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuBasicModels.h; sourceTree = "<group>"; };
 		EBC10025206E30BB005DC92B /* NSArray+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Safe.h"; sourceTree = "<group>"; };
-		EBD7E734251896E000522B58 /* JuEncodeObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuEncodeObject.h; sourceTree = "<group>"; };
-		EBD7E735251896E000522B58 /* JuEncodeObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuEncodeObject.m; sourceTree = "<group>"; };
-		EBD7E736251896E000522B58 /* NSObject+JsonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JsonModel.m"; sourceTree = "<group>"; };
-		EBD7E737251896E100522B58 /* NSObject+JsonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JsonModel.h"; sourceTree = "<group>"; };
 		EBD7E73B25189A2100522B58 /* JuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuModel.m; sourceTree = "<group>"; };
 		EBD7E73C25189A2100522B58 /* JuResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuResultModel.h; sourceTree = "<group>"; };
 		EBD7E73D25189A2100522B58 /* JuResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuResultModel.m; sourceTree = "<group>"; };
@@ -171,10 +171,10 @@
 				EBC10023206E30BB005DC92B /* JuBasicModels.m */,
 				EBC10025206E30BB005DC92B /* NSArray+Safe.h */,
 				EBC10021206E30BB005DC92B /* NSArray+Safe.m */,
-				EBD7E734251896E000522B58 /* JuEncodeObject.h */,
-				EBD7E735251896E000522B58 /* JuEncodeObject.m */,
-				EBD7E737251896E100522B58 /* NSObject+JsonModel.h */,
-				EBD7E736251896E000522B58 /* NSObject+JsonModel.m */,
+				EB6E9DF825ADB4B500004D82 /* JuEncodeCoder.h */,
+				EB6E9DF725ADB4B500004D82 /* JuEncodeCoder.m */,
+				EB6E9DF625ADB4B500004D82 /* NSObject+JsonModel.h */,
+				EB6E9DF525ADB4B500004D82 /* NSObject+JsonModel.m */,
 			);
 			path = BaseModel;
 			sourceTree = "<group>";
@@ -309,12 +309,12 @@
 				C40020741BA2B62E00BBA475 /* JuvidSysModels.m in Sources */,
 				EBD7E74125189A2200522B58 /* JuModel.m in Sources */,
 				EBC10027206E30BB005DC92B /* JuBasicEncode.m in Sources */,
+				EB6E9DF925ADB4B500004D82 /* NSObject+JsonModel.m in Sources */,
 				EBC10026206E30BB005DC92B /* NSArray+Safe.m in Sources */,
 				EBC10028206E30BB005DC92B /* JuBasicModels.m in Sources */,
-				EBD7E738251896E100522B58 /* JuEncodeObject.m in Sources */,
 				C40020721BA2B62E00BBA475 /* JuvidModels.m in Sources */,
-				EBD7E739251896E100522B58 /* NSObject+JsonModel.m in Sources */,
 				EBD7E74225189A2200522B58 /* JuResultModel.m in Sources */,
+				EB6E9DFA25ADB4B500004D82 /* JuEncodeCoder.m in Sources */,
 				C400207B1BA2B68F00BBA475 /* ViewController.m in Sources */,
 				C40020461BA2B60500BBA475 /* main.m in Sources */,
 				C40020731BA2B62E00BBA475 /* JuvidResultModels.m in Sources */,
