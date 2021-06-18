@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "NSObject+JsonModel.h"
-#import "JuvidModels.h"
+//#import "JuvidModels.h"
 #import "JuModel.h"
 
 @implementation ViewController

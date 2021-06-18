@@ -8,6 +8,7 @@
 
 #import "JuBasicModels.h"
 
+
 @interface JuvidResultModels : JuBasicModels
 
 @property (nonatomic,strong) NSString *m_desc;

@@ -1,0 +1,6 @@
+framework module JUJsonModel {
+  umbrella header "JUJsonModel-umbrella.h"
+
+  export *
+  module * { export * }
+}

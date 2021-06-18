@@ -10,17 +10,11 @@
 		C40020461BA2B60500BBA475 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C40020451BA2B60500BBA475 /* main.m */; };
 		C400204B1BA2B60500BBA475 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C400204A1BA2B60500BBA475 /* Images.xcassets */; };
 		C400205A1BA2B60600BBA475 /* JsonModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C40020591BA2B60600BBA475 /* JsonModelTests.m */; };
-		C40020721BA2B62E00BBA475 /* JuvidModels.m in Sources */ = {isa = PBXBuildFile; fileRef = C400206B1BA2B62E00BBA475 /* JuvidModels.m */; };
-		C40020731BA2B62E00BBA475 /* JuvidResultModels.m in Sources */ = {isa = PBXBuildFile; fileRef = C400206D1BA2B62E00BBA475 /* JuvidResultModels.m */; };
-		C40020741BA2B62E00BBA475 /* JuvidSysModels.m in Sources */ = {isa = PBXBuildFile; fileRef = C400206F1BA2B62E00BBA475 /* JuvidSysModels.m */; };
 		C400207A1BA2B68F00BBA475 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C40020761BA2B68F00BBA475 /* AppDelegate.m */; };
 		C400207B1BA2B68F00BBA475 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C40020781BA2B68F00BBA475 /* ViewController.m */; };
 		C400207C1BA2B68F00BBA475 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C40020791BA2B68F00BBA475 /* Main.storyboard */; };
-		EB6E9DF925ADB4B500004D82 /* NSObject+JsonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6E9DF525ADB4B500004D82 /* NSObject+JsonModel.m */; };
-		EB6E9DFA25ADB4B500004D82 /* JuEncodeCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6E9DF725ADB4B500004D82 /* JuEncodeCoder.m */; };
-		EBC10026206E30BB005DC92B /* NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC10021206E30BB005DC92B /* NSArray+Safe.m */; };
-		EBC10027206E30BB005DC92B /* JuBasicEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC10022206E30BB005DC92B /* JuBasicEncode.m */; };
-		EBC10028206E30BB005DC92B /* JuBasicModels.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC10023206E30BB005DC92B /* JuBasicModels.m */; };
+		EB71A523267CAC940098A496 /* TestModel in Resources */ = {isa = PBXBuildFile; fileRef = EB71A522267CAC940098A496 /* TestModel */; };
+		EBCC4901C12AB3C8A3A7BC88 /* Pods_JsonModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED189DF849FD95802B4EF93 /* Pods_JsonModel.framework */; };
 		EBD7E74125189A2200522B58 /* JuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD7E73B25189A2100522B58 /* JuModel.m */; };
 		EBD7E74225189A2200522B58 /* JuResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD7E73D25189A2100522B58 /* JuResultModel.m */; };
 		EBD7E74325189A2200522B58 /* JuSysModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD7E73F25189A2200522B58 /* JuSysModel.m */; };
@@ -37,6 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4ED189DF849FD95802B4EF93 /* Pods_JsonModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JsonModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53B366B36197F3E380A8B9C8 /* Pods-JsonModel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JsonModel.release.xcconfig"; path = "Target Support Files/Pods-JsonModel/Pods-JsonModel.release.xcconfig"; sourceTree = "<group>"; };
+		9B15B36F762A2AC68591C499 /* Pods-JsonModel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JsonModel.debug.xcconfig"; path = "Target Support Files/Pods-JsonModel/Pods-JsonModel.debug.xcconfig"; sourceTree = "<group>"; };
 		C400203D1BA2B60500BBA475 /* JsonModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JsonModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C40020411BA2B60500BBA475 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C40020451BA2B60500BBA475 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -44,27 +41,12 @@
 		C40020531BA2B60600BBA475 /* JsonModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JsonModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C40020581BA2B60600BBA475 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C40020591BA2B60600BBA475 /* JsonModelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JsonModelTests.m; sourceTree = "<group>"; };
-		C400206A1BA2B62E00BBA475 /* JuvidModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuvidModels.h; sourceTree = "<group>"; };
-		C400206B1BA2B62E00BBA475 /* JuvidModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuvidModels.m; sourceTree = "<group>"; };
-		C400206C1BA2B62E00BBA475 /* JuvidResultModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuvidResultModels.h; sourceTree = "<group>"; };
-		C400206D1BA2B62E00BBA475 /* JuvidResultModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuvidResultModels.m; sourceTree = "<group>"; };
-		C400206E1BA2B62E00BBA475 /* JuvidSysModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuvidSysModels.h; sourceTree = "<group>"; };
-		C400206F1BA2B62E00BBA475 /* JuvidSysModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuvidSysModels.m; sourceTree = "<group>"; };
 		C40020751BA2B68F00BBA475 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C40020761BA2B68F00BBA475 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C40020771BA2B68F00BBA475 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C40020781BA2B68F00BBA475 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C40020791BA2B68F00BBA475 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		EB6E9DF525ADB4B500004D82 /* NSObject+JsonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JsonModel.m"; sourceTree = "<group>"; };
-		EB6E9DF625ADB4B500004D82 /* NSObject+JsonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JsonModel.h"; sourceTree = "<group>"; };
-		EB6E9DF725ADB4B500004D82 /* JuEncodeCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuEncodeCoder.m; sourceTree = "<group>"; };
-		EB6E9DF825ADB4B500004D82 /* JuEncodeCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuEncodeCoder.h; sourceTree = "<group>"; };
-		EBC10020206E30BB005DC92B /* JuBasicEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuBasicEncode.h; sourceTree = "<group>"; };
-		EBC10021206E30BB005DC92B /* NSArray+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Safe.m"; sourceTree = "<group>"; };
-		EBC10022206E30BB005DC92B /* JuBasicEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuBasicEncode.m; sourceTree = "<group>"; };
-		EBC10023206E30BB005DC92B /* JuBasicModels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuBasicModels.m; sourceTree = "<group>"; };
-		EBC10024206E30BB005DC92B /* JuBasicModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuBasicModels.h; sourceTree = "<group>"; };
-		EBC10025206E30BB005DC92B /* NSArray+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Safe.h"; sourceTree = "<group>"; };
+		EB71A522267CAC940098A496 /* TestModel */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TestModel; sourceTree = "<group>"; };
 		EBD7E73B25189A2100522B58 /* JuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuModel.m; sourceTree = "<group>"; };
 		EBD7E73C25189A2100522B58 /* JuResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuResultModel.h; sourceTree = "<group>"; };
 		EBD7E73D25189A2100522B58 /* JuResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuResultModel.m; sourceTree = "<group>"; };
@@ -79,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBCC4901C12AB3C8A3A7BC88 /* Pods_JsonModel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,12 +75,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75D5EF904A9FA92E37960CCC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4ED189DF849FD95802B4EF93 /* Pods_JsonModel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B15F5CB1223B85955537E539 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B15B36F762A2AC68591C499 /* Pods-JsonModel.debug.xcconfig */,
+				53B366B36197F3E380A8B9C8 /* Pods-JsonModel.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C40020341BA2B60500BBA475 = {
 			isa = PBXGroup;
 			children = (
 				C400203F1BA2B60500BBA475 /* JsonModel */,
 				C40020561BA2B60600BBA475 /* JsonModelTests */,
 				C400203E1BA2B60500BBA475 /* Products */,
+				B15F5CB1223B85955537E539 /* Pods */,
+				75D5EF904A9FA92E37960CCC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,40 +158,9 @@
 		C40020631BA2B62E00BBA475 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C40020641BA2B62E00BBA475 /* BaseModel */,
-				C40020691BA2B62E00BBA475 /* TestModel */,
+				EB71A522267CAC940098A496 /* TestModel */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		C40020641BA2B62E00BBA475 /* BaseModel */ = {
-			isa = PBXGroup;
-			children = (
-				EBC10020206E30BB005DC92B /* JuBasicEncode.h */,
-				EBC10022206E30BB005DC92B /* JuBasicEncode.m */,
-				EBC10024206E30BB005DC92B /* JuBasicModels.h */,
-				EBC10023206E30BB005DC92B /* JuBasicModels.m */,
-				EBC10025206E30BB005DC92B /* NSArray+Safe.h */,
-				EBC10021206E30BB005DC92B /* NSArray+Safe.m */,
-				EB6E9DF825ADB4B500004D82 /* JuEncodeCoder.h */,
-				EB6E9DF725ADB4B500004D82 /* JuEncodeCoder.m */,
-				EB6E9DF625ADB4B500004D82 /* NSObject+JsonModel.h */,
-				EB6E9DF525ADB4B500004D82 /* NSObject+JsonModel.m */,
-			);
-			path = BaseModel;
-			sourceTree = "<group>";
-		};
-		C40020691BA2B62E00BBA475 /* TestModel */ = {
-			isa = PBXGroup;
-			children = (
-				C400206A1BA2B62E00BBA475 /* JuvidModels.h */,
-				C400206B1BA2B62E00BBA475 /* JuvidModels.m */,
-				C400206C1BA2B62E00BBA475 /* JuvidResultModels.h */,
-				C400206D1BA2B62E00BBA475 /* JuvidResultModels.m */,
-				C400206E1BA2B62E00BBA475 /* JuvidSysModels.h */,
-				C400206F1BA2B62E00BBA475 /* JuvidSysModels.m */,
-			);
-			path = TestModel;
 			sourceTree = "<group>";
 		};
 		EBD7E73A25189A1700522B58 /* test */ = {
@@ -212,9 +183,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C400205D1BA2B60600BBA475 /* Build configuration list for PBXNativeTarget "JsonModel" */;
 			buildPhases = (
+				CEC2BB6F2CCF28AD313A350A /* [CP] Check Pods Manifest.lock */,
 				C40020391BA2B60500BBA475 /* Sources */,
 				C400203A1BA2B60500BBA475 /* Frameworks */,
 				C400203B1BA2B60500BBA475 /* Resources */,
+				56C91B0519108A330093964C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -288,6 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB71A523267CAC940098A496 /* TestModel in Resources */,
 				C400204B1BA2B60500BBA475 /* Images.xcassets in Resources */,
 				C400207C1BA2B68F00BBA475 /* Main.storyboard in Resources */,
 			);
@@ -302,23 +276,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		56C91B0519108A330093964C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JsonModel/Pods-JsonModel-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JUJsonModel/JUJsonModel.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JUJsonModel.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JsonModel/Pods-JsonModel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEC2BB6F2CCF28AD313A350A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JsonModel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C40020391BA2B60500BBA475 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C40020741BA2B62E00BBA475 /* JuvidSysModels.m in Sources */,
 				EBD7E74125189A2200522B58 /* JuModel.m in Sources */,
-				EBC10027206E30BB005DC92B /* JuBasicEncode.m in Sources */,
-				EB6E9DF925ADB4B500004D82 /* NSObject+JsonModel.m in Sources */,
-				EBC10026206E30BB005DC92B /* NSArray+Safe.m in Sources */,
-				EBC10028206E30BB005DC92B /* JuBasicModels.m in Sources */,
-				C40020721BA2B62E00BBA475 /* JuvidModels.m in Sources */,
 				EBD7E74225189A2200522B58 /* JuResultModel.m in Sources */,
-				EB6E9DFA25ADB4B500004D82 /* JuEncodeCoder.m in Sources */,
 				C400207B1BA2B68F00BBA475 /* ViewController.m in Sources */,
 				C40020461BA2B60500BBA475 /* main.m in Sources */,
-				C40020731BA2B62E00BBA475 /* JuvidResultModels.m in Sources */,
 				C400207A1BA2B68F00BBA475 /* AppDelegate.m in Sources */,
 				EBD7E74325189A2200522B58 /* JuSysModel.m in Sources */,
 			);
@@ -424,6 +433,7 @@
 		};
 		C400205E1BA2B60600BBA475 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B15B36F762A2AC68591C499 /* Pods-JsonModel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = JsonModel/JsonModel.entitlements;
@@ -440,6 +450,7 @@
 		};
 		C400205F1BA2B60600BBA475 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53B366B36197F3E380A8B9C8 /* Pods-JsonModel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = JsonModel/JsonModel.entitlements;
