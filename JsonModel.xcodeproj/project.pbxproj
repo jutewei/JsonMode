@@ -254,7 +254,8 @@
 				TargetAttributes = {
 					C400203C1BA2B60500BBA475 = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = F67RB7QUJJ;
+						DevelopmentTeam = 5DGTJHKZ77;
+						ProvisioningStyle = Manual;
 					};
 					C40020521BA2B60600BBA475 = {
 						CreatedOnToolsVersion = 6.4;
@@ -427,11 +428,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = JsonModel/JsonModel.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = F67RB7QUJJ;
+				DEVELOPMENT_TEAM = 5DGTJHKZ77;
 				INFOPLIST_FILE = JsonModel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -441,11 +444,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = JsonModel/JsonModel.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = F67RB7QUJJ;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = JsonModel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

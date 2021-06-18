@@ -15,6 +15,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title=@"jsonModel";
     _ju_textJson.font=[NSFont systemFontOfSize:16];
 
 //    测试model
@@ -24,7 +25,7 @@
     NSDictionary *dic=[NSMutableDictionary dictionaryWithContentsOfFile:[self juDocumentPath]];
     if (dic) {
 //        _ju_ClassName.stringValue=dic[@"class"];
-//        _ju_PreName.stringValue=dic[@"prefix"];
+        _ju_PreName.stringValue=dic[@"prefix"];
     }
 //  {"result":{"desc":"查询成功","mark":"0"},"sys":{"update_time":"[\"2015-08-07 15:48:02\"]","version_addr":"XYLEPlay_08-resigned.ipa","app_type":"ios","create_name":"1","version_number":"1.0","update_name":"[\"13818287875\"]","create_time":"1","pk_id":1,"is_replace":"1"}}
     
@@ -171,7 +172,7 @@
     [forMatter setDateFormat:@"YYYY"];
     NSString *strY=[forMatter stringFromDate:[NSDate date]];
    
-   return [NSString stringWithFormat:@"//\n//  %@.%@\n//  JsonModel\n//\n//  Created by Juvid on %@.\n//  Copyright (c) %@年 Juvid's. All rights reserved.\n//\n\n",className,type,strYMD,strY];
+   return [NSString stringWithFormat:@"//\n//  %@.%@\n//  JuJsonModel\n//\n//  Created by Juvid on %@.\n//  Copyright (c) %@年 Juvid's. All rights reserved.\n//\n\n",className,type,strYMD,strY];
 }
 
 @end
