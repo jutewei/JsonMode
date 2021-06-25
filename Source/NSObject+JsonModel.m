@@ -198,10 +198,10 @@
         class = [class superclass];
     }
     return strModel;
-
 }
+
 +(NSString *)getDicKey:(NSString *)propertyName{
-    for (NSString *prefix in JU_ProPrefixs) {
+    for (NSString *prefix in self.juProPrefixs) {
         if ([propertyName hasPrefix:prefix]) {
             return  [propertyName substringFromIndex:prefix.length];
         }
@@ -228,7 +228,9 @@
     free(properties);
     return arrProperty;
 }
-
++(NSArray *)juProPrefixs{
+    return @[@"ju_"];
+}
 //-(NSString *)juVauleForkey:(NSString *)key{
 //    NSArray *sh_ArrProperty=[[self class] juAllProperty];
 //    NSString *Property=[NSString stringWithFormat:@"%@%@",JU_Model_Prefix,key];

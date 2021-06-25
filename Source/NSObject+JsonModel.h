@@ -8,7 +8,7 @@
 /**未使用**/
 #import <Foundation/Foundation.h>
 //#import "NSArray+Safe.h"
-#define JU_ProPrefixs @[@"zl_",@"ju_"]
+//#define JU_ProPrefixs @[@"zl_",@"ju_"]
 //NS_ASSUME_NONNULL_BEGIN
 
 @protocol JuIgnore
@@ -104,6 +104,9 @@
  */
 +(NSArray *)juAllProperty;
 //-(NSString *)juVauleForkey:(NSString *)key;
+
++(NSArray *)juProPrefixs;
+
 @end
 
 //NS_ASSUME_NONNULL_END
