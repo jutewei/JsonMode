@@ -1,6 +1,6 @@
 //
 //  NSObject+encode.h
-//  PABase
+//  JsonModel
 //
 //  Created by Juvid on 2019/12/13.
 //  Copyright © 2019 Juvid. All rights reserved.

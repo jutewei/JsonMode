@@ -1,6 +1,6 @@
 //
 //  NSArray+Safe.m
-//  PFBPublic
+//  JsonModel
 //
 //  Created by Juvid on 2018/3/22.
 //  Copyright © 2018年 Juvid. All rights reserved.
