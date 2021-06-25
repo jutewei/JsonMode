@@ -3,14 +3,13 @@
 //  JsonModel
 //
 //  Created by Juvid on 15/6/12.
-//  Copyright (c) 2015年 Juvid's. All rights reserved.
+//  Copyright (c) 2015年 Juvid(zhutianwei). All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+#import "NSObject+CopyModel.h"
+@interface JuBaseEncode : NSObject<NSCopying,NSCoding>
 
-@interface JuBasicEncode : NSObject<NSCopying,NSCoding>
--(void)destroyDealloc;//重置单例
--(void)mutableCopy:(id)baseClass;
 @end
 
 /**
