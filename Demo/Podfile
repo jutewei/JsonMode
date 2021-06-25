@@ -1,0 +1,15 @@
+workspace 'JsonModelDemo.xcworkspace'
+
+# public specs
+# source 'https://github.com/Cocoapods/Specs.git'
+
+platform :osx, '10.9' 
+inhibit_all_warnings!
+#use_modular_headers!
+use_frameworks!
+target 'JsonModel' do
+    pod 'JUJsonModel', :path => '../'# , :subspecs => ['LayoutSwift']
+end
+
+
+

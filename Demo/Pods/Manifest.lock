@@ -1,0 +1,16 @@
+PODS:
+  - JUJsonModel (1.0)
+
+DEPENDENCIES:
+  - JUJsonModel (from `../`)
+
+EXTERNAL SOURCES:
+  JUJsonModel:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JUJsonModel: cb8522ccdef59df559fd5a9b9dd0b179b4c9a86d
+
+PODFILE CHECKSUM: b2b0acc936dacc3b970790f0d18a910279230b77
+
+COCOAPODS: 1.10.1
