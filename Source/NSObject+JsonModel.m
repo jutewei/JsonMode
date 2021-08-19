@@ -57,10 +57,10 @@
 //            if (juIgnorekeys&&[juIgnorekeys containsObject:dicKey]) {
 //                continue;
 //            }
-            if ([propertType containsString:@"<JuIgnore>"]) {
+            if ([propertType containsString:@"<JuIgnore>"]||![propertType containsString:propertyName]) {
                 continue;
             }
-
+           
             if (value) {
                 value=[value isEqual:[NSNull null]]?@"":value;
                 if ([propertType hasPrefix:@"TQ,N,V"]) {///< 无符号整数

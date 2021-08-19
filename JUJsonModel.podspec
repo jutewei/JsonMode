@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name    = 'JUJsonModel'
-  s.version = '1.0.2'
+  s.version = '1.0.3'
   s.summary = 'json转模型，模型转json'
   s.homepage    = 'https://github.com/jutewei/JsonMode'
   s.license = 'MIT'
