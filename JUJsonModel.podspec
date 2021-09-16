@@ -15,9 +15,6 @@ Pod::Spec.new do |s|
 #  s.platform    = :osx, '10.9'
   s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.9'
-
-  
-  
   s.swift_version = '5'
   s.source  = {:git => 'https://github.com/jutewei/JsonMode.git', :tag => s.version}
   s.requires_arc = true

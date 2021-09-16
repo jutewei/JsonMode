@@ -67,9 +67,10 @@
                     [model setValue:@([value integerValue]) forKey:propertyName];
                 }
                 else{
-                    if ([propertType hasPrefix:@"T@\"NSArray"]&&![value isKindOfClass:[NSArray class]]){
-                        value=[NSMutableArray array];
-                    }else if ([propertType hasPrefix:@"T@\"NSString"]) {///< 转str
+                    NSObject *propertValue=[[self juPropertyCls:propertType] new];
+                    if ([propertValue isKindOfClass:[NSArray class]]&&![value isKindOfClass:[NSArray class]]){
+                        value=propertValue;
+                    }else if ([propertValue isKindOfClass:[NSString class]]) {///< 转str
                         value=[NSString stringWithFormat:@"%@",value];
                     }
                     [model setValue:value forKey:propertyName];
@@ -77,7 +78,7 @@
             }
             else{//当前属性没有返回值
 //                if ([propertType containsString:@",R,"]) continue;
-
+//旧对象不覆盖
                 if (isNewObject&&[propertType hasPrefix:@"T@\"NSString"]) {
                     [model setValue:@"" forKey:propertyName];
                 }
@@ -140,15 +141,13 @@
             if ([propertType containsString:@"<JuIgnore>"]||![propertType containsString:propertyName]) {
                 continue;
             }
-
+            NSObject *propertValue=[[self juPropertyCls:propertType] new];
+            
             if ([model valueForKeyPath:propertyName]!=nil) {
                 [dic setObject:[model valueForKeyPath:propertyName] forKey:dicKey];
-            }else if ([propertType hasPrefix:@"T@\"NSArray"]){
-                [dic setValue:@[] forKey:dicKey];
-            }else if([propertType hasPrefix:@"T@\"NSDictionary"]){
-                [dic setValue:@{} forKey:dicKey];
-            }else {
-                [dic setValue:@"" forKey:dicKey];
+            }
+            else if(propertValue){
+                [dic setValue:propertValue forKey:dicKey];
             }
 
         }
@@ -228,6 +227,17 @@
     free(properties);
     return arrProperty;
 }
+
+//获取属性类
+-(Class)juPropertyCls:(NSString *)propertType{
+    NSArray *arrProperty=[propertType componentsSeparatedByString:@"\""];
+    NSString *propertyCls=nil;
+    if (arrProperty.count>1) {
+        propertyCls=arrProperty[1];
+    }
+    return NSClassFromString(propertyCls);
+}
+
 +(NSArray *)juProPrefixs{
     return @[@"ju_"];
 }
