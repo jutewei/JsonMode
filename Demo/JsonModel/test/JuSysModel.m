@@ -9,5 +9,7 @@
 #import "JuSysModel.h"
 
 @implementation JuSysModel
-
+-(BOOL)isCustomOjc{
+    return YES;
+}
 @end

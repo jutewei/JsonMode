@@ -72,6 +72,12 @@
                         value=propertValue;
                     }else if ([propertValue isKindOfClass:[NSString class]]) {///< 转str
                         value=[NSString stringWithFormat:@"%@",value];
+                    }else if([value isKindOfClass:[NSDictionary class]]){
+//                        字典转对象
+                        value=[[propertValue class] juToModel:value];
+                    }else if(propertValue&&![value isKindOfClass:[propertValue class]]){
+//                        属性是oc对象，但属性值和真实值不是同一个类型
+                        value=propertValue;
                     }
                     [model setValue:value forKey:propertyName];
                 }
@@ -142,9 +148,14 @@
                 continue;
             }
             NSObject *propertValue=[[self juPropertyCls:propertType] new];
+            id vaule=[model valueForKeyPath:propertyName];
             
-            if ([model valueForKeyPath:propertyName]!=nil) {
-                [dic setObject:[model valueForKeyPath:propertyName] forKey:dicKey];
+            if (vaule!=nil) {
+                if (propertValue.isCustomOjc&&[propertValue isKindOfClass:[vaule class]]) {
+                    [dic setObject:[vaule juToDictionary] forKey:dicKey];
+                }else{
+                    [dic setObject:vaule forKey:dicKey];
+                }
             }
             else if(propertValue){
                 [dic setValue:propertValue forKey:dicKey];
@@ -236,6 +247,10 @@
         propertyCls=arrProperty[1];
     }
     return NSClassFromString(propertyCls);
+}
+
+-(BOOL)isCustomOjc{
+    return NO;
 }
 
 +(NSArray *)juProPrefixs{

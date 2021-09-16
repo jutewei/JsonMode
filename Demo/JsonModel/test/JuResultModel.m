@@ -9,5 +9,7 @@
 #import "JuResultModel.h"
 
 @implementation JuResultModel
-
+-(BOOL)isCustomOjc{
+    return YES;
+}
 @end

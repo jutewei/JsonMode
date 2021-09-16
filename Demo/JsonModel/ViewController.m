@@ -22,6 +22,7 @@
     NSData *dataResult=[_ju_textJson.string dataUsingEncoding:NSUTF8StringEncoding];
     NSDictionary *dicResult=[NSJSONSerialization JSONObjectWithData:dataResult options:NSJSONReadingMutableContainers error:nil];
     juvidM=[JuModel juToModel:dicResult];
+    dicResult=[juvidM juToDictionary];
     NSDictionary *dic=[NSMutableDictionary dictionaryWithContentsOfFile:[self juDocumentPath]];
     if (dic) {
 //        _ju_ClassName.stringValue=dic[@"class"];

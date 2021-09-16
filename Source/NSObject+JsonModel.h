@@ -75,7 +75,7 @@
  */
 +(NSMutableDictionary *)juToDictionary:(NSObject *)model;
 
-//对象数组转换成数字
+//对象数组转换成数组
 /**
  *  @author Juvid, 15-07-15 10:07:17
  *
