@@ -137,7 +137,7 @@
 //            if (juIgnorekeys&&[juIgnorekeys containsObject:dicKey]) {
 //                continue;
 //            }
-            if ([propertType containsString:@"<JuIgnore>"]) {
+            if ([propertType containsString:@"<JuIgnore>"]||![propertType containsString:propertyName]) {
                 continue;
             }
 
