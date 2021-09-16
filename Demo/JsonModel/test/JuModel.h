@@ -10,7 +10,15 @@
 #import "JuResultModel.h"
 #import "JuSysModel.h"
 
-@interface JuModel : NSObject
+
+@protocol juTest <NSObject>
+
+@property (nonatomic,strong) NSString *ju_test1;
+@property (nonatomic,strong) NSString *ju_test2;
+
+@end
+
+@interface JuModel : NSObject<juTest>
 
 @property (nonatomic,strong) JuResultModel *ju_result;
 @property (nonatomic,strong) JuSysModel *ju_sys;

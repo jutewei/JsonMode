@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name    = 'JUJsonModel'
-  s.version = '1.0'
+  s.version = '1.0.3'
   s.summary = 'json转模型，模型转json'
   s.homepage    = 'https://github.com/jutewei/JsonMode'
   s.license = 'MIT'
@@ -21,9 +21,6 @@ Pod::Spec.new do |s|
   s.swift_version = '5'
   s.source  = {:git => 'https://github.com/jutewei/JsonMode.git', :tag => s.version}
   s.requires_arc = true
-
- 
   s.source_files = 'Source/*.{h,m}'
- 
  
 end

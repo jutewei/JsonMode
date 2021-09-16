@@ -1,5 +1,5 @@
 PODS:
-  - JUJsonModel (1.0)
+  - JUJsonModel (1.0.2)
 
 DEPENDENCIES:
   - JUJsonModel (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JUJsonModel: cb8522ccdef59df559fd5a9b9dd0b179b4c9a86d
+  JUJsonModel: 417e8e64e8b51465273267f8fc231c7390d4c4b0
 
 PODFILE CHECKSUM: b2b0acc936dacc3b970790f0d18a910279230b77
 

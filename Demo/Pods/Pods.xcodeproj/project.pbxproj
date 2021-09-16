@@ -7,26 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03A4BD9D05A7E7F221A6C952FF9F812D /* NSObject+JsonModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E63B6381E69F283CAF2072335E78287 /* NSObject+JsonModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1E806DDC493349441CE96D0DCC21580D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */; };
-		2FE7B6A5C5010A7C344FF7854C6E30B8 /* JuEncodeCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 456B417737A5B8DD0390C7CA57900869 /* JuEncodeCoder.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		34FBCEC2242CCD24CA7BB3E0A20F1518 /* NSArray+Safe.h in Headers */ = {isa = PBXBuildFile; fileRef = FFBE4294499EFB30B299B189168A2BC8 /* NSArray+Safe.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		43510D31981E87B3C7BEE5308EF2EEAB /* JUJsonModel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B4AB3546DB91F2E6F9E0EAB757CA360 /* JUJsonModel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5A1152CE956869B2691E13A59BD40927 /* JuEncodeCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F87C307235E4EA43B24BD333F06D3E9 /* JuEncodeCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		67B3F18330054844F3C199CE3F69ED16 /* JuBasicEncode.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A7B2B967C3C9E3BEBFAE150BF39E9E6 /* JuBasicEncode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		772928AAEBAB51546EAD25489BCAB568 /* JuBasicEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9781FA6F2C0D6D18E1A66F97C0A68F49 /* JuBasicEncode.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		82A10F8144F92D003526F0A360457AC0 /* NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = A440FEE5C88C1B7A96A3D5AC9FC38584 /* NSArray+Safe.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1D266E5D701431CE5B1D0C8383E7C1FE /* JUJsonModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8892E2783C6B69978A7FDC75C95CD2E5 /* JUJsonModel-dummy.m */; };
+		3C809162401AF7053FAABA3A179522E1 /* NSObject+JsonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FC33510D265D1B0F9F8544686AAA2E27 /* NSObject+JsonModel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		8BAF1D15545E91DB9A26EE92AF1F4512 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */; };
-		A3843C30B65FFF19824ABAA7A3BB8627 /* NSObject+JsonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C6CBC40CA918F34FD1FB61FF62F9CF /* NSObject+JsonModel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		A85ABC05CF39EFE760595F7FEF3B7DBD /* JuBasicModels.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1A6B7F463E9C39DD267CCAC95E80BE /* JuBasicModels.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		ECDE28942918674A5931D32C598CEADD /* JUJsonModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D18357232D9CAAABAF3A629ABD630C /* JUJsonModel-dummy.m */; };
+		8DE5EAABB59D60A675394F6F0954289A /* NSObject+CopyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AC7D337C6881BA9BD3B3B5A41632B88C /* NSObject+CopyModel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9EC8302DA9D62E5DCB2DF4D98164648F /* JUJsonModel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 62FA81FC1AA9100D6D6469D4223907E1 /* JUJsonModel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC38FC40CC4818CA980FA97CA43D6958 /* NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 523D73AD639821A52BA37252BEF8225A /* NSArray+Safe.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B8FE43D0D6CEA6237EDB748C0A1886A6 /* NSObject+JsonModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4734FF9ACD27D19B940EFD97C37538F0 /* NSObject+JsonModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFE296C08F4387ABDBD78FBDC2C88EA2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */; };
+		E793763EC5552B99DB80F84ADE5D6404 /* JuBaseEncode.h in Headers */ = {isa = PBXBuildFile; fileRef = 31B8F2F890CBE5CE589A4DB24DEFD613 /* JuBaseEncode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EFBAAEA1498088F0FBCC163EE61F3BF6 /* Pods-JsonModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EDDA4356B839133EC6EF583887D8D2BE /* Pods-JsonModel-dummy.m */; };
-		F0DF52FBF14B99BA7D6B9BCEB90A2143 /* JuBasicModels.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C83CDACDB1556BCD9E0CF71B295C110 /* JuBasicModels.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F28DFDFBD1F0B0117F33A4421924EEBC /* NSArray+Safe.h in Headers */ = {isa = PBXBuildFile; fileRef = F376FCFA49823E2D83A3D8DAA35B3F29 /* NSArray+Safe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC55EC5AB4F18F8893E04A5D02514BC6 /* JuBaseEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = 013DABAA54CE9ECC8777AA4F8965CBA9 /* JuBaseEncode.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FC824C7E883DF1269D030DAFD1C1B828 /* NSObject+CopyModel.h in Headers */ = {isa = PBXBuildFile; fileRef = BB8FE9011E51ADA76CA7126CF8223C21 /* NSObject+CopyModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FF25CD61F025F7BC2FD08F0FAA41C23D /* Pods-JsonModel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C256983430BFFA27061D0D60DE3C448D /* Pods-JsonModel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		EF7EDEFC8DE13EF5A925DA29E9DE402C /* PBXContainerItemProxy */ = {
+		B705606A011E14379041030680AE6C45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -36,49 +34,39 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		013DABAA54CE9ECC8777AA4F8965CBA9 /* JuBaseEncode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JuBaseEncode.m; path = Source/JuBaseEncode.m; sourceTree = "<group>"; };
 		133452697101FD0D093FE719E1969394 /* JUJsonModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JUJsonModel.framework; path = JUJsonModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		144EC1BBB0B7FE2DC9543B28A1E8A7CD /* Pods-JsonModel-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JsonModel-frameworks.sh"; sourceTree = "<group>"; };
 		1D77CF1890C95014F8C61025B004191A /* Pods-JsonModel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JsonModel-Info.plist"; sourceTree = "<group>"; };
-		1E85D681BA3DA74AA43D1DAAC46B641B /* JUJsonModel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JUJsonModel-Info.plist"; sourceTree = "<group>"; };
-		1F87C307235E4EA43B24BD333F06D3E9 /* JuEncodeCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JuEncodeCoder.h; path = Source/JuEncodeCoder.h; sourceTree = "<group>"; };
-		2B4AB3546DB91F2E6F9E0EAB757CA360 /* JUJsonModel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JUJsonModel-umbrella.h"; sourceTree = "<group>"; };
-		3C83CDACDB1556BCD9E0CF71B295C110 /* JuBasicModels.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JuBasicModels.h; path = Source/JuBasicModels.h; sourceTree = "<group>"; };
+		3004A57CE1C9582177AE8912FF64D72E /* JUJsonModel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JUJsonModel.debug.xcconfig; sourceTree = "<group>"; };
+		31B8F2F890CBE5CE589A4DB24DEFD613 /* JuBaseEncode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JuBaseEncode.h; path = Source/JuBaseEncode.h; sourceTree = "<group>"; };
 		3C8981B0C32BDDF7723845CD22663208 /* Pods-JsonModel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JsonModel.debug.xcconfig"; sourceTree = "<group>"; };
-		3D003DCF7C596CADC3E2BCC45FBC8285 /* JUJsonModel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JUJsonModel.modulemap; sourceTree = "<group>"; };
-		3E63B6381E69F283CAF2072335E78287 /* NSObject+JsonModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+JsonModel.h"; path = "Source/NSObject+JsonModel.h"; sourceTree = "<group>"; };
 		433261EC7238B718ADE23F7E7B2B7154 /* Pods-JsonModel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JsonModel.release.xcconfig"; sourceTree = "<group>"; };
-		456B417737A5B8DD0390C7CA57900869 /* JuEncodeCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JuEncodeCoder.m; path = Source/JuEncodeCoder.m; sourceTree = "<group>"; };
-		484E780E72245A3C30EC41ABB463D4F9 /* JUJsonModel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JUJsonModel.release.xcconfig; sourceTree = "<group>"; };
+		4734FF9ACD27D19B940EFD97C37538F0 /* NSObject+JsonModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+JsonModel.h"; path = "Source/NSObject+JsonModel.h"; sourceTree = "<group>"; };
+		48F006B26478E24E1C86A55599483EE9 /* JUJsonModel.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JUJsonModel.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		49C1ACECE72C2BDE7548261677741BC3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		523D73AD639821A52BA37252BEF8225A /* NSArray+Safe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Safe.m"; path = "Source/NSArray+Safe.m"; sourceTree = "<group>"; };
 		5521F22A8E28EFA5609770DAA1F08CDA /* Pods_JsonModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JsonModel.framework; path = "Pods-JsonModel.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		55C6CBC40CA918F34FD1FB61FF62F9CF /* NSObject+JsonModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+JsonModel.m"; path = "Source/NSObject+JsonModel.m"; sourceTree = "<group>"; };
-		5A7B2B967C3C9E3BEBFAE150BF39E9E6 /* JuBasicEncode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JuBasicEncode.h; path = Source/JuBasicEncode.h; sourceTree = "<group>"; };
-		6406EB6E57473D4783E3422DE42C641D /* JUJsonModel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JUJsonModel.debug.xcconfig; sourceTree = "<group>"; };
-		6DCC8270A5526E9D11B132A7E34B0090 /* JUJsonModel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JUJsonModel-prefix.pch"; sourceTree = "<group>"; };
+		622DCC8318A21BC678C416D0F240CB7F /* JUJsonModel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JUJsonModel-prefix.pch"; sourceTree = "<group>"; };
+		62FA81FC1AA9100D6D6469D4223907E1 /* JUJsonModel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JUJsonModel-umbrella.h"; sourceTree = "<group>"; };
+		6A925BB7136AD1E008E42277D560F450 /* JUJsonModel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JUJsonModel.modulemap; sourceTree = "<group>"; };
+		8892E2783C6B69978A7FDC75C95CD2E5 /* JUJsonModel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JUJsonModel-dummy.m"; sourceTree = "<group>"; };
+		942B7B3C2849FEAC2162E8DB971A50F0 /* JUJsonModel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JUJsonModel.release.xcconfig; sourceTree = "<group>"; };
 		957FF282F966B72CE7FF74D6CD6C0F50 /* Pods-JsonModel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JsonModel.modulemap"; sourceTree = "<group>"; };
-		9781FA6F2C0D6D18E1A66F97C0A68F49 /* JuBasicEncode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JuBasicEncode.m; path = Source/JuBasicEncode.m; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A440FEE5C88C1B7A96A3D5AC9FC38584 /* NSArray+Safe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Safe.m"; path = "Source/NSArray+Safe.m"; sourceTree = "<group>"; };
-		AFD19DF769185929763F5347787C7E20 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		AC7D337C6881BA9BD3B3B5A41632B88C /* NSObject+CopyModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+CopyModel.m"; path = "Source/NSObject+CopyModel.m"; sourceTree = "<group>"; };
 		B63E44688265EBBF7B624BA1300BCBD5 /* Pods-JsonModel-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JsonModel-acknowledgements.plist"; sourceTree = "<group>"; };
-		BB1A6B7F463E9C39DD267CCAC95E80BE /* JuBasicModels.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JuBasicModels.m; path = Source/JuBasicModels.m; sourceTree = "<group>"; };
+		BB8FE9011E51ADA76CA7126CF8223C21 /* NSObject+CopyModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+CopyModel.h"; path = "Source/NSObject+CopyModel.h"; sourceTree = "<group>"; };
 		C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		C256983430BFFA27061D0D60DE3C448D /* Pods-JsonModel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JsonModel-umbrella.h"; sourceTree = "<group>"; };
-		C2CE25ECB4C45C6F04D06BB4CAA43902 /* JUJsonModel.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JUJsonModel.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E441B2C1D1061BC830CF2D308E820131 /* Pods-JsonModel-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JsonModel-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E5558D26994BB9482598407A194D434D /* JUJsonModel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JUJsonModel-Info.plist"; sourceTree = "<group>"; };
 		EDDA4356B839133EC6EF583887D8D2BE /* Pods-JsonModel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JsonModel-dummy.m"; sourceTree = "<group>"; };
-		F6D18357232D9CAAABAF3A629ABD630C /* JUJsonModel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JUJsonModel-dummy.m"; sourceTree = "<group>"; };
-		FFBE4294499EFB30B299B189168A2BC8 /* NSArray+Safe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Safe.h"; path = "Source/NSArray+Safe.h"; sourceTree = "<group>"; };
+		F376FCFA49823E2D83A3D8DAA35B3F29 /* NSArray+Safe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Safe.h"; path = "Source/NSArray+Safe.h"; sourceTree = "<group>"; };
+		FC33510D265D1B0F9F8544686AAA2E27 /* NSObject+JsonModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+JsonModel.m"; path = "Source/NSObject+JsonModel.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		06C66A3EFEBE86C0974C263B068B1162 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1E806DDC493349441CE96D0DCC21580D /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6A86FFBD58ED40F284FE290D878DAA68 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -87,23 +75,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		809270F97CB6B7A4CC295A00A8707BF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFE296C08F4387ABDBD78FBDC2C88EA2 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1FE4A26765DEF9F592310CF71252098E /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F2E96BC13B5D3E8AF81E7A25815E0E8D /* JUJsonModel */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		29B4044A9BC0E646F0C61D1ED7BC1842 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
 				DA9F15DDC3D4DFB1DE1F3A9AAFA046C5 /* Pods-JsonModel */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4F6F80CE7A4E266D81A28CAAFD0C1A02 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6A925BB7136AD1E008E42277D560F450 /* JUJsonModel.modulemap */,
+				8892E2783C6B69978A7FDC75C95CD2E5 /* JUJsonModel-dummy.m */,
+				E5558D26994BB9482598407A194D434D /* JUJsonModel-Info.plist */,
+				622DCC8318A21BC678C416D0F240CB7F /* JUJsonModel-prefix.pch */,
+				62FA81FC1AA9100D6D6469D4223907E1 /* JUJsonModel-umbrella.h */,
+				3004A57CE1C9582177AE8912FF64D72E /* JUJsonModel.debug.xcconfig */,
+				942B7B3C2849FEAC2162E8DB971A50F0 /* JUJsonModel.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Demo/Pods/Target Support Files/JUJsonModel";
 			sourceTree = "<group>";
 		};
 		6355FA6977743D1ABBA832BB6B1ED304 /* Products */ = {
@@ -115,35 +118,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7A38E4F8E8DE1192B033A133FA385052 /* Pod */ = {
+		69ECF2261577D9B2E20B52C9238938C4 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				C2CE25ECB4C45C6F04D06BB4CAA43902 /* JUJsonModel.podspec */,
-				AFD19DF769185929763F5347787C7E20 /* README.md */,
+				48F006B26478E24E1C86A55599483EE9 /* JUJsonModel.podspec */,
+				49C1ACECE72C2BDE7548261677741BC3 /* README.md */,
 			);
 			name = Pod;
-			sourceTree = "<group>";
-		};
-		C98A0E527BBEC196112317B07123D4CB /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3D003DCF7C596CADC3E2BCC45FBC8285 /* JUJsonModel.modulemap */,
-				F6D18357232D9CAAABAF3A629ABD630C /* JUJsonModel-dummy.m */,
-				1E85D681BA3DA74AA43D1DAAC46B641B /* JUJsonModel-Info.plist */,
-				6DCC8270A5526E9D11B132A7E34B0090 /* JUJsonModel-prefix.pch */,
-				2B4AB3546DB91F2E6F9E0EAB757CA360 /* JUJsonModel-umbrella.h */,
-				6406EB6E57473D4783E3422DE42C641D /* JUJsonModel.debug.xcconfig */,
-				484E780E72245A3C30EC41ABB463D4F9 /* JUJsonModel.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Demo/Pods/Target Support Files/JUJsonModel";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				1FE4A26765DEF9F592310CF71252098E /* Development Pods */,
+				DBD12452FF2EF8B32E5E52BB0301F359 /* Development Pods */,
 				E0A1E60606E0BF6E2E10F1F01350DFE8 /* Frameworks */,
 				6355FA6977743D1ABBA832BB6B1ED304 /* Products */,
 				29B4044A9BC0E646F0C61D1ED7BC1842 /* Targets Support Files */,
@@ -167,6 +155,14 @@
 			path = "Target Support Files/Pods-JsonModel";
 			sourceTree = "<group>";
 		};
+		DBD12452FF2EF8B32E5E52BB0301F359 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC8F8EE48981F0ED93A1EC2450A9AD2C /* JUJsonModel */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		E0A1E60606E0BF6E2E10F1F01350DFE8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,21 +179,19 @@
 			name = "OS X";
 			sourceTree = "<group>";
 		};
-		F2E96BC13B5D3E8AF81E7A25815E0E8D /* JUJsonModel */ = {
+		EC8F8EE48981F0ED93A1EC2450A9AD2C /* JUJsonModel */ = {
 			isa = PBXGroup;
 			children = (
-				5A7B2B967C3C9E3BEBFAE150BF39E9E6 /* JuBasicEncode.h */,
-				9781FA6F2C0D6D18E1A66F97C0A68F49 /* JuBasicEncode.m */,
-				3C83CDACDB1556BCD9E0CF71B295C110 /* JuBasicModels.h */,
-				BB1A6B7F463E9C39DD267CCAC95E80BE /* JuBasicModels.m */,
-				1F87C307235E4EA43B24BD333F06D3E9 /* JuEncodeCoder.h */,
-				456B417737A5B8DD0390C7CA57900869 /* JuEncodeCoder.m */,
-				FFBE4294499EFB30B299B189168A2BC8 /* NSArray+Safe.h */,
-				A440FEE5C88C1B7A96A3D5AC9FC38584 /* NSArray+Safe.m */,
-				3E63B6381E69F283CAF2072335E78287 /* NSObject+JsonModel.h */,
-				55C6CBC40CA918F34FD1FB61FF62F9CF /* NSObject+JsonModel.m */,
-				7A38E4F8E8DE1192B033A133FA385052 /* Pod */,
-				C98A0E527BBEC196112317B07123D4CB /* Support Files */,
+				31B8F2F890CBE5CE589A4DB24DEFD613 /* JuBaseEncode.h */,
+				013DABAA54CE9ECC8777AA4F8965CBA9 /* JuBaseEncode.m */,
+				F376FCFA49823E2D83A3D8DAA35B3F29 /* NSArray+Safe.h */,
+				523D73AD639821A52BA37252BEF8225A /* NSArray+Safe.m */,
+				BB8FE9011E51ADA76CA7126CF8223C21 /* NSObject+CopyModel.h */,
+				AC7D337C6881BA9BD3B3B5A41632B88C /* NSObject+CopyModel.m */,
+				4734FF9ACD27D19B940EFD97C37538F0 /* NSObject+JsonModel.h */,
+				FC33510D265D1B0F9F8544686AAA2E27 /* NSObject+JsonModel.m */,
+				69ECF2261577D9B2E20B52C9238938C4 /* Pod */,
+				4F6F80CE7A4E266D81A28CAAFD0C1A02 /* Support Files */,
 			);
 			name = JUJsonModel;
 			path = ../..;
@@ -206,19 +200,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0783C9C95368E0EDDE7EBB1DC3E694E1 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				67B3F18330054844F3C199CE3F69ED16 /* JuBasicEncode.h in Headers */,
-				F0DF52FBF14B99BA7D6B9BCEB90A2143 /* JuBasicModels.h in Headers */,
-				5A1152CE956869B2691E13A59BD40927 /* JuEncodeCoder.h in Headers */,
-				43510D31981E87B3C7BEE5308EF2EEAB /* JUJsonModel-umbrella.h in Headers */,
-				34FBCEC2242CCD24CA7BB3E0A20F1518 /* NSArray+Safe.h in Headers */,
-				03A4BD9D05A7E7F221A6C952FF9F812D /* NSObject+JsonModel.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		76D3DE0F0A8BA7EAF0E8F7FC2E2336BC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -227,17 +208,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7EF840885A44ED591211D260FEABE248 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E793763EC5552B99DB80F84ADE5D6404 /* JuBaseEncode.h in Headers */,
+				9EC8302DA9D62E5DCB2DF4D98164648F /* JUJsonModel-umbrella.h in Headers */,
+				F28DFDFBD1F0B0117F33A4421924EEBC /* NSArray+Safe.h in Headers */,
+				FC824C7E883DF1269D030DAFD1C1B828 /* NSObject+CopyModel.h in Headers */,
+				B8FE43D0D6CEA6237EDB748C0A1886A6 /* NSObject+JsonModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		0F12F6864A688B336B83AFC87B8F6018 /* JUJsonModel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F0DC4908AF01BAFAF3318E4267CC65B9 /* Build configuration list for PBXNativeTarget "JUJsonModel" */;
+			buildConfigurationList = 26FA668DD49197BE715BEAE075D76B75 /* Build configuration list for PBXNativeTarget "JUJsonModel" */;
 			buildPhases = (
-				0783C9C95368E0EDDE7EBB1DC3E694E1 /* Headers */,
-				534C752FCECF11AFEF7791865309998F /* Sources */,
-				06C66A3EFEBE86C0974C263B068B1162 /* Frameworks */,
-				53439A8F121169ED849BDA1D4663289C /* Resources */,
+				7EF840885A44ED591211D260FEABE248 /* Headers */,
+				5CF1D38F6DE03C0921B4D16D2A2A5324 /* Sources */,
+				809270F97CB6B7A4CC295A00A8707BF4 /* Frameworks */,
+				45ED159A0ED061CBF8A1C80C6C52ABB0 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -260,7 +253,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				282F42862047B91DC34BDB0E54EA9067 /* PBXTargetDependency */,
+				05EB6BDA8395A7D1A5A3628506B2BFB3 /* PBXTargetDependency */,
 			);
 			name = "Pods-JsonModel";
 			productName = "Pods-JsonModel";
@@ -296,7 +289,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		53439A8F121169ED849BDA1D4663289C /* Resources */ = {
+		45ED159A0ED061CBF8A1C80C6C52ABB0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -321,93 +314,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		534C752FCECF11AFEF7791865309998F /* Sources */ = {
+		5CF1D38F6DE03C0921B4D16D2A2A5324 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				772928AAEBAB51546EAD25489BCAB568 /* JuBasicEncode.m in Sources */,
-				A85ABC05CF39EFE760595F7FEF3B7DBD /* JuBasicModels.m in Sources */,
-				2FE7B6A5C5010A7C344FF7854C6E30B8 /* JuEncodeCoder.m in Sources */,
-				ECDE28942918674A5931D32C598CEADD /* JUJsonModel-dummy.m in Sources */,
-				82A10F8144F92D003526F0A360457AC0 /* NSArray+Safe.m in Sources */,
-				A3843C30B65FFF19824ABAA7A3BB8627 /* NSObject+JsonModel.m in Sources */,
+				FC55EC5AB4F18F8893E04A5D02514BC6 /* JuBaseEncode.m in Sources */,
+				1D266E5D701431CE5B1D0C8383E7C1FE /* JUJsonModel-dummy.m in Sources */,
+				AC38FC40CC4818CA980FA97CA43D6958 /* NSArray+Safe.m in Sources */,
+				8DE5EAABB59D60A675394F6F0954289A /* NSObject+CopyModel.m in Sources */,
+				3C809162401AF7053FAABA3A179522E1 /* NSObject+JsonModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		282F42862047B91DC34BDB0E54EA9067 /* PBXTargetDependency */ = {
+		05EB6BDA8395A7D1A5A3628506B2BFB3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JUJsonModel;
 			target = 0F12F6864A688B336B83AFC87B8F6018 /* JUJsonModel */;
-			targetProxy = EF7EDEFC8DE13EF5A925DA29E9DE402C /* PBXContainerItemProxy */;
+			targetProxy = B705606A011E14379041030680AE6C45 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		39B8A8F678BC53C0C050D87DC7C40D6D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 484E780E72245A3C30EC41ABB463D4F9 /* JUJsonModel.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/JUJsonModel/JUJsonModel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/JUJsonModel/JUJsonModel-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MODULEMAP_FILE = "Target Support Files/JUJsonModel/JUJsonModel.modulemap";
-				PRODUCT_MODULE_NAME = JUJsonModel;
-				PRODUCT_NAME = JUJsonModel;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7201BE641CF406E08E2D8009B202FF2C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6406EB6E57473D4783E3422DE42C641D /* JUJsonModel.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/JUJsonModel/JUJsonModel-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/JUJsonModel/JUJsonModel-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MODULEMAP_FILE = "Target Support Files/JUJsonModel/JUJsonModel.modulemap";
-				PRODUCT_MODULE_NAME = JUJsonModel;
-				PRODUCT_NAME = JUJsonModel;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		8595DAAADE1DA176102F3A02A5CC21A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -507,6 +437,68 @@
 			};
 			name = Release;
 		};
+		C37D1758E76CEA0D4383EBA54309B5B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 942B7B3C2849FEAC2162E8DB971A50F0 /* JUJsonModel.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JUJsonModel/JUJsonModel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JUJsonModel/JUJsonModel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/JUJsonModel/JUJsonModel.modulemap";
+				PRODUCT_MODULE_NAME = JUJsonModel;
+				PRODUCT_NAME = JUJsonModel;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D1ED533A9D2449ED6473CF158CD32AED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3004A57CE1C9582177AE8912FF64D72E /* JUJsonModel.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JUJsonModel/JUJsonModel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JUJsonModel/JUJsonModel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/JUJsonModel/JUJsonModel.modulemap";
+				PRODUCT_MODULE_NAME = JUJsonModel;
+				PRODUCT_NAME = JUJsonModel;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		ECFB23F07EF28C77BB787B50680DCB27 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3C8981B0C32BDDF7723845CD22663208 /* Pods-JsonModel.debug.xcconfig */;
@@ -605,6 +597,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		26FA668DD49197BE715BEAE075D76B75 /* Build configuration list for PBXNativeTarget "JUJsonModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1ED533A9D2449ED6473CF158CD32AED /* Debug */,
+				C37D1758E76CEA0D4383EBA54309B5B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2C4C0D5248FC87A676BB7452285A29D5 /* Build configuration list for PBXNativeTarget "Pods-JsonModel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -619,15 +620,6 @@
 			buildConfigurations = (
 				8595DAAADE1DA176102F3A02A5CC21A0 /* Debug */,
 				F6AAAB79F323E7F367268DCB73F4D128 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F0DC4908AF01BAFAF3318E4267CC65B9 /* Build configuration list for PBXNativeTarget "JUJsonModel" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7201BE641CF406E08E2D8009B202FF2C /* Debug */,
-				39B8A8F678BC53C0C050D87DC7C40D6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

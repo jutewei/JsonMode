@@ -10,10 +10,9 @@
 #endif
 #endif
 
-#import "JuBasicEncode.h"
-#import "JuBasicModels.h"
-#import "JuEncodeCoder.h"
+#import "JuBaseEncode.h"
 #import "NSArray+Safe.h"
+#import "NSObject+CopyModel.h"
 #import "NSObject+JsonModel.h"
 
 FOUNDATION_EXPORT double JUJsonModelVersionNumber;

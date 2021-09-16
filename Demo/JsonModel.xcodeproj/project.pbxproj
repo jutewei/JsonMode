@@ -13,7 +13,6 @@
 		C400207A1BA2B68F00BBA475 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C40020761BA2B68F00BBA475 /* AppDelegate.m */; };
 		C400207B1BA2B68F00BBA475 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C40020781BA2B68F00BBA475 /* ViewController.m */; };
 		C400207C1BA2B68F00BBA475 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C40020791BA2B68F00BBA475 /* Main.storyboard */; };
-		EB71A523267CAC940098A496 /* TestModel in Resources */ = {isa = PBXBuildFile; fileRef = EB71A522267CAC940098A496 /* TestModel */; };
 		EBCC4901C12AB3C8A3A7BC88 /* Pods_JsonModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED189DF849FD95802B4EF93 /* Pods_JsonModel.framework */; };
 		EBD7E74125189A2200522B58 /* JuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD7E73B25189A2100522B58 /* JuModel.m */; };
 		EBD7E74225189A2200522B58 /* JuResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD7E73D25189A2100522B58 /* JuResultModel.m */; };
@@ -46,7 +45,6 @@
 		C40020771BA2B68F00BBA475 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C40020781BA2B68F00BBA475 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C40020791BA2B68F00BBA475 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		EB71A522267CAC940098A496 /* TestModel */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TestModel; sourceTree = "<group>"; };
 		EBD7E73B25189A2100522B58 /* JuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuModel.m; sourceTree = "<group>"; };
 		EBD7E73C25189A2100522B58 /* JuResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuResultModel.h; sourceTree = "<group>"; };
 		EBD7E73D25189A2100522B58 /* JuResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuResultModel.m; sourceTree = "<group>"; };
@@ -117,7 +115,6 @@
 			children = (
 				EBD7E7442518A14200522B58 /* JsonModel.entitlements */,
 				EBD7E73A25189A1700522B58 /* test */,
-				C40020631BA2B62E00BBA475 /* Model */,
 				C400204A1BA2B60500BBA475 /* Images.xcassets */,
 				C40020751BA2B68F00BBA475 /* AppDelegate.h */,
 				C40020761BA2B68F00BBA475 /* AppDelegate.m */,
@@ -153,14 +150,6 @@
 				C40020581BA2B60600BBA475 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C40020631BA2B62E00BBA475 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				EB71A522267CAC940098A496 /* TestModel */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		EBD7E73A25189A1700522B58 /* test */ = {
@@ -261,7 +250,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB71A523267CAC940098A496 /* TestModel in Resources */,
 				C400204B1BA2B60500BBA475 /* Images.xcassets in Resources */,
 				C400207C1BA2B68F00BBA475 /* Main.storyboard in Resources */,
 			);
