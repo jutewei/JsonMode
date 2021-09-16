@@ -17,5 +17,7 @@
 //-(void)setJu_sys:(NSDictionary *)ju_sys{
 //    _ju_sys=[JuSysModel juToModel:ju_sys]; 
 //}
-
+-(BOOL)isCustomOjc{
+    return YES;
+}
 @end

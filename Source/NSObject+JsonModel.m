@@ -70,12 +70,15 @@
                     NSObject *propertValue=[[self juPropertyCls:propertType] new];
                     if ([propertValue isKindOfClass:[NSArray class]]&&![value isKindOfClass:[NSArray class]]){
                         value=propertValue;
-                    }else if ([propertValue isKindOfClass:[NSString class]]) {///< 转str
+                    }
+                    else if ([propertValue isKindOfClass:[NSString class]]) {///< 转str
                         value=[NSString stringWithFormat:@"%@",value];
-                    }else if([value isKindOfClass:[NSDictionary class]]){
+                    }
+                    else if([value isKindOfClass:[NSDictionary class]]&&![propertValue isKindOfClass:[NSDictionary class]]){
 //                        字典转对象
                         value=[[propertValue class] juToModel:value];
-                    }else if(propertValue&&![value isKindOfClass:[propertValue class]]){
+                    }
+                    else if(propertValue&&![value isKindOfClass:[propertValue class]]){
 //                        属性是oc对象，但属性值和真实值不是同一个类型
                         value=propertValue;
                     }
