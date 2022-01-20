@@ -23,7 +23,7 @@
     return [self juToModel:dic withModel:nil];
 }
 -(id)juToModel:(NSDictionary *)dic{
-    return [NSObject juToModel:dic withModel:self];
+    return [[self class] juToModel:dic withModel:self];
 }
 //字典转换成对象
 +(id)juToModel:(NSDictionary *)obj withModel:(NSObject *)model{
@@ -171,7 +171,7 @@
 }
 
 -(NSString *)juToString{
-    return [NSObject juToString:self];
+    return [[self class] juToString:self];
 }
 
 //对象转化成字符串
