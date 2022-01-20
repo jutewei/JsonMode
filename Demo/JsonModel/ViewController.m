@@ -15,6 +15,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+#if !TARGET_OS_OSX
+    NSLog(@"1111111");
+#else
+    NSLog(@"222222");
+
+#endif // !TARGET_OS_OSX
     self.title=@"jsonModel";
     _ju_textJson.font=[NSFont systemFontOfSize:16];
 
