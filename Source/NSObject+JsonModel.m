@@ -35,7 +35,8 @@
     if (obj==nil) {
         obj=@{};
     }else if (![obj isKindOfClass:[NSDictionary class]]) {
-        return obj;
+        if([obj isKindOfClass:[self juBaseClass]])return obj;
+        return model;
     }
 
 //    NSArray *juIgnorekeys=[model juIgnorekeys];
